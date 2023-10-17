@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-about.css" />
+  </head>
+  <body>
+    <div class="about-page">
+
+        <div id="nav-holder" > </div>  
+
+      <div class="about-section">
+        <div class="header-content">
+          <div class="title-subtitle">
+            <div class="text-wrapper-2">Branding | Image making</div>
+            <div class="text-wrapper-3">Howdy! I’m Reed</div>
+            <p class="p">I like to create products that better the world around me.</p>
+          </div>
+          <a href="https://www.animaapp.com" target="_blank" rel="noopener noreferrer"
+            ><div class="button"><div class="text-wrapper-4">Contact</div></div></a
+          >
+        </div>
+        <img class="headerimage" src="img/headshot.png" />
+      </div>
+
+      <div id="footer-holder" > </div>
+
+    </div>
+  </body>
+</html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("navigation.html", function(data){
+    $("#nav-holder").replaceWith(data);
+    });
+    $.get("footer.html", function(data){
+    $("#footer-holder").replaceWith(data);
+    });
+
+</script>  
